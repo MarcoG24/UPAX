@@ -1,8 +1,6 @@
-
-__all__ = ['RetrieveValidations']
-
 import math
 
+__all__ = ['RetrieveValidations']
 
 class RetrieveValidations:
     def __init__(self) -> None:
@@ -56,3 +54,10 @@ class RetrieveValidations:
         if event['event_type'] == "palindrome":
             res = event['number'] == self._palindrome(event['number'])
             return "El numero es palindromo? : " + str(res)
+        if event['event_type'] == "all":
+            print(self._validate_if_fibonacci(event['number']))
+            factorial = self._factorial(event['number'])
+            print(f'Factorial: {str(factorial)}')
+            print(self._is_prime(event['number']))
+            res = event['number'] == self._palindrome(event['number'])
+            print("El numero es palindromo? : " + str(res))

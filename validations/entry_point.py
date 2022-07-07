@@ -18,5 +18,9 @@ def retrieve_validations(
 
     # Is palindrome
     python aws_lambda_wrapper.py '{\"event_type\": \"palindrome\", \"number\": 9669669 }' --function retrieve_validations
+    
+    # All
+    python aws_lambda_wrapper.py '{\"event_type\": \"all\", \"number\": 21 }' --function retrieve_validations
+    
     '''
     return RetrieveValidations().run(event)
