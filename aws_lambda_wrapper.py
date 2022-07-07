@@ -1,5 +1,6 @@
 import json
 from calculations.entry_point import retrieve_calculations
+from conversions.entry_point import retrieve_conversions
 from helpers.entry_point import get_params
 from operations.entry_point import retrieve_operations
 from validations.entry_point import retrieve_validations
@@ -26,6 +27,9 @@ if __name__ == "__main__":
         )),
         'retrieve_operations': lambda: print(json.dumps(
             retrieve_operations(**command_arguments)
+        )),
+        'retrieve_conversions': lambda: print(json.dumps(
+            retrieve_conversions(**command_arguments)
         ))
     }
     if FUNCTION:
