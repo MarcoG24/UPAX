@@ -33,7 +33,6 @@ class RetrieveCalculations:
         self, 
         event
     ):
-        print(event)
         if event['event_type'] == "fibonacci":
             for x in range(event['number']):
                 print(self._fibonacci_of(x))

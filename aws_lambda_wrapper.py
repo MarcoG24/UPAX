@@ -1,6 +1,7 @@
 import json
 from calculations.entry_point import retrieve_calculations
 from helpers.entry_point import get_params
+from validations.entry_point import retrieve_validations
 
 
 if __name__ == "__main__":
@@ -18,6 +19,9 @@ if __name__ == "__main__":
     functions = {
         'retrieve_calculations': lambda: print(json.dumps(
             retrieve_calculations(**command_arguments)
+        )),
+        'retrieve_validations': lambda: print(json.dumps(
+            retrieve_validations(**command_arguments)
         ))
     }
     if FUNCTION:
