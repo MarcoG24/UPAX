@@ -14,10 +14,10 @@ class PlanetScaleRepository:
 
     def _connection_db(self, query: str):
         connection = MySQL.connect(
-            host= "m2a7l137cls6.us-east-3.psdb.cloud",
-            user="yu1m40bk28x9",
-            passwd= "pscale_pw_2W8RKmjVQElLQRyduLxvMjSwoStBBsnp-fmi44wLyrA",
-            db= "upax"
+            host= os.environ['HOST'],
+            user= os.environ['USERNAME'],
+            passwd= os.environ['PASSWORD'],
+            db= os.environ['DATABASE']
         )
         db_cursor = connection.cursor()
         db_cursor.execute(query)
