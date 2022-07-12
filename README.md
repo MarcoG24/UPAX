@@ -9,4 +9,4 @@ Para poder ejecutar en local es necesario entrar al archivo entry_point.py de ca
 Para poder consumir las apis, el url es 
 
 - URL
-      https://bffgtxi6gg.execute-api.us-east-2.amazonaws.com/prod/ <path solicitado>
+      https://bffgtxi6gg.execute-api.us-east-2.amazonaws.com/prod/path_solicitado
