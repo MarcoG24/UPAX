@@ -1,0 +1,14 @@
+.carousel-style{
+    max-height: 40vh;
+    padding-top: 2vh;
+}
+.carousel-body{
+    padding-bottom: 2vh;
+}
+.carousel-img{
+    max-height: 40vh;
+}
+.table-style{
+    padding-left: 10vh;
+    padding-right: 10vh;
+}

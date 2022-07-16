@@ -5,6 +5,7 @@ from helpers.entry_point import get_params
 from microservices.entry_point import (
     retrieve_advertisements_handler,
     retrieve_orders_by_mail_handler,
+    retrieve_products_handler,
     retrieve_recommendations_handler
 )
 from operations.entry_point import retrieve_operations
@@ -41,6 +42,9 @@ if __name__ == "__main__":
         )),
         'retrieve_recommendations_handler': lambda: print(json.dumps(
             retrieve_recommendations_handler(**command_arguments)
+        )),
+        'retrieve_products_handler': lambda: print(json.dumps(
+            retrieve_products_handler(**command_arguments)
         )),
         'retrieve_orders_by_mail_handler': lambda: print(json.dumps(
             retrieve_orders_by_mail_handler(**command_arguments)

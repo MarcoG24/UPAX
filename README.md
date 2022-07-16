@@ -10,3 +10,9 @@ Para poder consumir las apis, el url es
 
 - URL
       https://bffgtxi6gg.execute-api.us-east-2.amazonaws.com/prod/path_solicitado
+
+## Front End
+Para visualizar el fron funcionando, solo es necesario abrir el archivo en cualquier explorador.
+``` bash
+frontend/index.html
+```
